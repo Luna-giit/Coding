@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Luna shopping </title>
+        <style>
+            html, body {
+                background-color: rgb(18, 18, 20);
+                margin: 0px;
+                padding: 0px;
+                color: rgb(230, 230, 235);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+            .back-to-amazon {
+                color: rgb(0, 113, 133);
+                border: none;
+            }
+            .in-stock {
+                color: rgb(28, 28, 30);
+                font-weight: bold;
+                font-size: 20px;
+              }
+            .cart-button {
+                background-color: rgb(255, 170, 51);
+                color: rgb(20, 20, 20);
+                height: 30px;
+                width: 100px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                margin-right: 5px;
+                margin-top: 15px;
+                box-shadow:15px 15px 20px rgb(12, 12, 12);
+            }
+            .buy-button {
+                background-color: rgb(40, 40, 45);
+                color: rgb(230, 230, 235);
+                height: 30px;
+                width: 100px;
+                border-radius: 1px solid rgb(255, 170, 51);
+                border: none;
+                cursor: pointer;
+                margin-top: 15px;
+                box-shadow: 15px 15px 20px rgb(12, 12, 12);
+            }
+            p {
+                text-shadow: 1px 1px ;
+                text-decoration: solid;
+            }
+            /* Reset default spacing */
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            /* Navbar Container*/
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 30px;
+                background-color: rgb(22, 22, 25);
+                color: rgb(199, 95, 95);
+            }
+            /*  logo text*/
+            .logo h2 {
+                font-size: 22px;
+                font-weight: bold;
+            }
+            /* Navigation links*/
+            .nav-links {
+                list-style: disc;
+                display: flex;
+                gap: 25px;
+                color: rgb(180, 180, 190);
+            }
+            /* Nav link style*/
+            .nav-links a {
+                text-decoration: none;
+                color: rgb(230, 230, 235);
+                font-size: 30px;
+                transition: color 0.3s ease;
+            }
+            /* hover effects */
+            .cart-button:hover{
+                color: rgb(49, 15, 128);
+            }
+            /* hover effects */
+            .buy-button:hover {
+                color: rgb(255, 170, 51);
+            }
+            /* hover effects*/
+            .nav-links a:hover {
+                color: rgb(255, 170, 51);
+            }
+            /* Unvisited link*/
+            a:link {
+                color: rgb(255, 170, 51);
+            }
+            /*visited link */
+            a:visited link{
+                color: rgb(255, 170, 51);
+            }
+            /*selected link*/
+            a:active{
+                color: rgb(255, 170, 51);
+            }
+            .review-section {
+                margin: 10px 10px;
+                margin-top: 70px;
+                padding: 10px;
+                background-color:rgb(28, 28, 30);
+                font-size: 15px; 
+                color: rgb(160, 160, 170); 
+            }
+            .delivery {
+                font-style: italic;
+                font: bold;
+                color: rgb(160, 160, 170);
+            }
+            .amazon-description {
+                padding: 10px;
+                margin: 20px 10px;
+                background-color: rgb(228, 28, 30);
+                border-spacing: 5px;        
+            }
+            .review {
+                background-color: rgb(34, 34, 38);
+                padding: 15px;
+                margin-bottom: 15px;
+                border-radius: 8px;
+                box-shadow: 0px 4px 6px rgba(55, 24, 24,);
+            }
+            .stars {
+                color: rgb(255, 170, 51);
+            }
+        </style>
+    </head>
+        <body>
+            <header class="navbar">
+                <div class="logo">
+                    <h2> My Shopping Record </h2>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#"> Home</a></li>
+                        <li><a href="#"> Shop</a></li>
+                        <li><a href="#"> Categories</a></li>
+                        <li><a href="#"> My Shopping Record</a></li>
+                        <li><a href="#"> Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="amazon-description">
+                <p> This link takes you directly to amazon </p>
+                <p class="back-to-amazon-button"> <a href="https://www.jumia.com.ng/mlp-appliances/"> Back to Amazon </a> </p>
+                <H2> Nike Black Running Shoes </H2>
+                <p class="in-stock"> $39 -- in stock </p>
+                <p class="delivery">Free delivery tomorrow </p>
+                <button class="cart-button"> Add to Cart </button>
+                <button class="buy-button"> Buy now </button>
+            </div>
+            <section class="review-section">
+                <h2> Customer Review</h2>
+                <div class="review">
+                    <h4> Yussey B.</h4>
+                    <P class="stars">⭐⭐⭐⭐⭐</p>
+                    <p class="comment">Very comfortable and stylish. Greate Value for Money</p>
+                </div>
+                <div class="review">
+                    <h4> Zainny B.</h4>
+                    <p class="stars">⭐⭐⭐⭐⭐ </p>
+                    <p class="comment"> Exellent cushioning and support. Delivery was fast</p>
+                </div>
+                <div class="review">
+                    <h4> Tobby B.</h4>
+                    <p class="stars"> ⭐⭐⭐⭐⭐</p>
+                    <p class="comment"> Perfect for daily runs. Fits well and looks great</p>
+                </div>
+            </section>
+    </body>
+</html>
